@@ -22,7 +22,9 @@ public class BonusServiceTest {
         // производим проверку (сравниваем ожидаемый и фактический):
         Assertions.assertEquals(expected, actual);
         if (actual == expected) {
-            out.println("Test 1 - ok");};
+            out.println("Test 1 - ok");
+        }
+        ;
     }
 
     @Test
@@ -39,26 +41,32 @@ public class BonusServiceTest {
 
         // производим проверку (сравниваем ожидание и факт):
         Assertions.assertEquals(expected, actual);
-         if (actual == expected) {
-             out.println("Test 2 - ok");};
+        if (actual == expected) {
+            out.println("Test 2 - ok");
+        }
+        ;
     }
-   @Test
-   void TreeshouldCalculateForUNRegisteredAndUnderLimit() {
-       BonusService service = new BonusService();
+
+    @Test
+    void TreeshouldCalculateForUNRegisteredAndUnderLimit() {
+        BonusService service = new BonusService();
 
         // ввод данных:
-       long amount = 1000;
-       boolean registered = false;
-       long expected = 10;
+        long amount = 1000;
+        boolean registered = false;
+        long expected = 10;
 
         // вызываем целевой метод:
-       long actual = service.calculate(amount, registered);
+        long actual = service.calculate(amount, registered);
 
         // производим проверку (сравниваем ожидание и факт):
-       Assertions.assertEquals(expected, actual);
-       if (actual == expected) {
-           out.println("Test 3 - ok");};
+        Assertions.assertEquals(expected, actual);
+        if (actual == expected) {
+            out.println("Test 3 - ok");
+        }
+        ;
     }
+
     @Test
     void FourshouldCalculateForUNRegisteredAndUnderLimit() {
         BonusService service = new BonusService();
@@ -74,9 +82,11 @@ public class BonusServiceTest {
         // производим проверку (сравниваем ожидание и факт):
         Assertions.assertEquals(expected, actual);
         if (actual == expected) {
-            out.println("Test 4 - ok");};
+            out.println("Test 4 - ok");
+        }
+        ;
     }
 
-        }
+}
 
 
